@@ -1,0 +1,590 @@
+ @import url('https://fonts.googleapis.com/css2?family= Dancing+Script & display = swap');
+
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+ }
+
+ body{
+  overflow-x: hidden;
+  width: 100vw;
+ }
+
+ .fundo {
+   height: 600px;
+   background-image: url('../img/roupa.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: grid;
+   align-items: flex-end;
+ }
+
+ .fundo ul{
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  
+  align-items: flex-start;
+  
+ }
+ .nav-bar hr{
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  margin-top: 8vh;
+  position: absolute;
+ }
+
+ .hr-navbar{
+  
+  color: white;
+  border: 1px solid white;
+  
+ } 
+
+ .nav-bar{
+  display: grid;
+  grid-template-rows: repeat(2,1fr);
+  justify-content: flex-start;
+  padding: 40px;
+  margin-top: -20vh;
+ }
+
+ .fundo ul li a{
+  color: white;
+  font-weight: 100;
+  text-decoration: none;
+  font-size: 2em;
+  
+ }
+
+ .fundo ul li a:hover{
+  padding: 8px;
+  background-color: white;
+  color: black;
+  border-radius: 30px;
+  font-size: 1.8em;
+  transition: 0.5s;
+
+ }
+
+ #triangulo-para-cima {
+   width: 0;
+   height: 0;
+
+   border-left: 100vw solid transparent;
+   border-bottom: 45.7vh solid white;
+   
+ }
+
+ .container-meu{
+   display: grid;
+   overflow: hidden;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .img-logo {
+   margin: 0 auto;
+ }
+
+ .logo {
+   margin-top: -60px;
+   height: 600px;
+ }
+
+ hr {
+   width: 90vw;
+   margin: 0 auto;
+   margin-top: -50px;
+   border-left: none;
+   border-bottom: none;
+   border-right: none;
+
+ }
+
+ .vantagens {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin: 0 auto;
+   margin-top: 50px;
+ }
+
+ .item-vantagem {
+   display: grid;
+   margin: 0 auto;
+ }
+
+ .item-vantagem span {
+   font-size: 1.6em;
+   font-weight: 100;
+ }
+
+ .item-vantagem i {
+   margin: 0 auto;
+
+ }
+
+ /* ==================================== flip roupas ==================================== */
+
+ .flip-card {
+   background-color: transparent;
+   width: 430px;
+   height: 430px;
+   perspective: 1000px;
+   z-index: 1;
+
+ }
+
+ .flip-card-inner {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+
+ }
+
+ .flip-card:hover .flip-card-inner {
+   transform: rotateY(180deg);
+ }
+
+ .flip-card-front,
+ .flip-card-back {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   border-radius: 20px;
+ }
+
+ .flip-card-front img {
+   width: 430px;
+   height: 430px;
+   border-radius: 20px;
+
+ }
+
+ .flip-card-back {
+   transform: rotateY(180deg);
+ }
+
+ .flip-card-back img {
+   width: 430px;
+   height: 430px;
+   border-radius: 20px;
+ }
+
+ .flip-card-back h3 {
+   margin-bottom: 0.3rem;
+   color: #0000;
+ }
+
+ .flip-card h1 {
+   margin: 0;
+   color: #0000;
+ }
+
+ h2 {
+   margin-top: 60px;
+   text-align: center;
+   margin-bottom: 60px;
+   font-size: 5em;
+   font-weight: 100;
+   font-family: Dancing Script;
+   color: #fff;
+ }
+
+ h3 {
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: white;
+   text-align: center;
+   font-size: 2em;
+   margin: 5px;
+ }
+
+ span {
+   font-size: 0.6em;
+ }
+
+ .cards {
+   display: grid;
+   gap: 10px;
+   grid-template-columns: repeat(3, 1fr);
+   align-items: center;
+   justify-items: center;
+   margin: 0 auto;
+ }
+
+ .bloco-cards {
+   display: grid;
+   margin-top: 10vh;
+   background: rgb(255, 255, 255);
+   background: -webkit-linear-gradient(left, #b7d5e5, #ffb6c0);
+   background: -moz-linear-gradient(left, #b7d5e5, #ffb6c0);
+   background: -ms-linear-gradient(left, #b7d5e5, #ffb6c0);
+   background: -o-linear-gradient(left, #b7d5e5, #ffb6c0);
+   background: linear-gradient(to right, #b7d5e5, #ffb6c0);
+   background: grad;
+   min-height: 1100px;
+ }
+
+ .look2{
+  margin-top: 10vh;
+ }
+
+ .look3{
+  margin-top: 20vh;
+ }
+
+ #triangulo-para-cima2 {
+   width: 0;
+   height: 0;
+   padding-top: 11vh;
+   border-right: 100vw solid transparent;
+   border-bottom: 30vh solid white;
+   margin-top: -10vh;
+ }
+
+ .triangulo-baixo {
+   display: grid;
+   align-items: flex-end;
+   width: 100vw;
+ }
+
+ #triangulo-para-baixo {
+   width: 0;
+   height: 0;
+   border-left: 100vw solid transparent;
+   border-top: 30vh solid white;
+   margin-bottom: -20vh;
+
+ }
+
+ .triangulo-cima {
+   display: grid;
+   align-items: flex-start;
+   width: 100vw;
+ }
+
+ /* ==================================== flip relogio ==================================== */
+
+ .flip-card-relogio {
+   background-color: transparent;
+   width: 300px;
+   height: 300px;
+   perspective: 1000px;
+  margin-bottom: 40px;
+ }
+
+ .flip-card-inner-relogio {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+ }
+
+ .flip-card-relogio:hover .flip-card-inner-relogio {
+   transform: rotateY(180deg);
+ }
+
+ .flip-card-front-relogio,
+ .flip-card-back-relogio {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+   border-radius: 16px;
+ }
+
+ .flip-card-front-relogio {
+  background: rgb(206, 207, 210);
+  background: linear-gradient(180deg, rgb(221, 223, 226) 0%, rgb(196, 196, 196) 25%, rgb(231, 229, 226) 64%, rgba(218, 213, 213, 1) 83%, rgba(198, 198, 198, 1) 92%);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+ }
+
+ .flip-card-front-relogio img {
+   width: 220px;
+   margin-top: 1rem;
+ }
+
+ .flip-card-back-relogio {
+   background: rgb(206, 207, 210);
+   background: linear-gradient(180deg, rgb(221, 223, 226) 0%, rgb(196, 196, 196) 25%, rgb(231, 229, 226) 64%, rgba(218, 213, 213, 1) 83%, rgba(198, 198, 198, 1) 92%);
+   color: #ffffff;
+   transform: rotateY(180deg);
+   display: grid;
+  justify-content: center;
+ }
+
+ .flip-card-back-relogio img {
+   width: 140px;
+   margin: 0 auto;
+   margin-top: 1em;
+ }
+
+ .flip-card-back-relogio h3 {
+   margin-bottom: 0.3rem;
+   
+ }
+
+ .flip-card-back-relogio h1 {
+   margin: 0;
+ }
+
+
+ .blocos-relogios {
+   display: grid;
+   align-items: center;
+   margin-top: 30vh;
+   background: rgb(174, 134, 37);
+   background: linear-gradient(90deg, rgba(174, 134, 37, 1) 0%, rgba(247, 239, 132, 1) 32%, rgba(212, 176, 75, 1) 83%, rgba(237, 201, 103, 1) 96%);
+   min-height: 780px;
+ }
+
+ .text-relogio{
+
+  color: black;
+  font-family: Dancing Script;
+ }
+
+ #triangulo-para-cima2-relogio {
+    width: 0;
+   height: 0;
+   border-left: 100vw solid transparent;
+   border-bottom:20vh solid white;
+}
+
+#triangulo-para-baixo-relogio {
+  width: 0;
+  height: 0;
+  border-right: 100vw solid transparent;
+  border-top: 20vh solid white;
+  
+}
+
+.relogio{
+  margin-top: 20vh;
+}
+
+.relogio2{
+  margin-top: 10vh;
+}
+
+
+/* ==================================== Footer ====================================   */
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  align-items: center;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+ border-radius: 40px 40px 0px 0px;
+  margin-top: 20vh;
+  color: white;
+}
+
+footer ul {
+  display: grid;
+  justify-content: center;
+  list-style: none;
+  
+}
+
+footer ul li{
+  color:rgba(0, 0, 0, 0.637);
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+footer ul li a{
+  text-decoration: none;
+  color:rgba(0, 0, 0, 0.637);
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+.redes-sociais{
+  display: flex;
+  list-style: none;
+}
+
+.redes-sociais li .redes-sociais-a{
+  display: flex;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 23px;
+  margin-right: 50px;
+  font-size: 60px;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.7);
+  z-index: 5;
+  transition: 0.3s;  
+}
+
+.redes-sociais li .redes-sociais-a::after{
+  content: " ";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 2px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: -1;
+  transition: 0.3s;
+}
+
+.redes-sociais li .redes-sociais-a:hover{
+  transform: rotate(-15deg);
+}
+
+.redes-sociais li .redes-sociais-a:hover::before {
+  transform: rotate(15deg);
+}
+
+.redes-sociais li .redes-sociais-a::before{
+  content: " ";
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  background: #25d366;
+  right: -5px;
+  bottom: 0;
+  border-radius: 23px;
+  z-index: -1;
+  transform-origin: 100% 100%;
+  transform: rotate(10deg);
+  transition: 0.3s;
+}
+
+.redes-sociais li:nth-child(2) .redes-sociais-a::before{
+  background: #1da1f2;
+}
+
+.redes-sociais li:nth-child(3) .redes-sociais-a::before{
+  background: #dc2743;
+}
+
+.modal-titulo{
+  font-family: Dancing Script;
+  color: black;
+  font-weight: bold;
+  
+}
+
+.logo-modal{
+  height: 240px;
+}
+
+.corpo-modal{
+  max-height: 78vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  background: rgb(255, 255, 255);
+   background: -webkit-linear-gradient(left, #b7d5e5, #ffb6c0);
+   background: -moz-linear-gradient(left, #b7d5e5, #ffb6c0);
+   background: -ms-linear-gradient(left, #b7d5e5, #ffb6c0);
+   background: -o-linear-gradient(left, #b7d5e5, #ffb6c0);
+   background: linear-gradient(to right, #b7d5e5, #ffb6c0);
+   background: grad;
+}
+
+.form-login span a{
+  font-weight: 100;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+  padding: 10px;
+}
+
+.form-login{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  align-items: center;
+  padding-bottom: 40px;
+  justify-items: center;
+}
+
+.form-login div label{
+  width: 100%;
+  font-family: Dancing Script;
+  font-size: 1.4em;
+  color: black;
+}
+
+.form-login div input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.form-cadastro{
+  display: grid;
+  grid-template-rows: repeat(4,1fr);
+  gap: 10px;
+  margin-bottom: 40px;
+  width: 250px;
+  justify-items: center;
+}
+
+.form-cadastro div label{
+  width: 100%;
+  font-family: Dancing Script;
+  font-size: 1.4em;
+  color: black;
+}
+
+.form-cadastro div input{
+  width: 100%;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.form-cadastro span a{
+  font-weight: 100;
+  font-size: 1.5em;
+  text-decoration: none;
+  color: rgb(27, 27, 27);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.041);
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(174, 134, 37);
+   background: linear-gradient(90deg, rgba(174, 134, 37, 1) 0%, rgba(247, 239, 132, 1) 32%, rgba(212, 176, 75, 1) 83%, rgba(237, 201, 103, 1) 96%);
+  border-radius: 2px;
+}
+
+/* Handle on hover */

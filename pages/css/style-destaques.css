@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family= Dancing+Script & display = swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    background-color: #f0efef;
+}
+
+.container {
+    width: 100vw;
+    display: grid;
+    justify-items: center;
+}
+
+header {
+    display: grid;
+    justify-items: center;
+}
+
+header img {
+    width: 300px;
+}
+
+hr {
+    width: 70vw;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    justify-items: center;
+    padding-top: 40px;
+    margin: -1vh;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    font-family: Dancing Script;
+}
+
+
+
+header ul li {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    background: rgb(174, 134, 37);
+    background: linear-gradient(90deg, rgba(174, 134, 37, 1) 0%, rgba(247, 239, 132, 1) 32%, rgba(212, 176, 75, 1) 83%, rgba(237, 201, 103, 1) 96%);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,0.5);
+}
+
+h1 {
+    margin-top: 5vh;
+    font-family: Dancing Script;
+    text-align: center;
+    font-size: 5em;
+}
+
+/* ======================================== Cards roupas ======================================== */
+main{
+    margin-top: 5vh;
+    background-color: white;
+    box-shadow: 3px 4px 7px rgba(0,0,0,0.1);
+}
+
+.cards-destaques {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.card {
+    position: relative;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.5s;
+    text-align: left;
+    /* background-color: wheat; */
+}
+
+.card:hover {
+    /* background-color: wheat; */
+    width: 460px;
+    height: 350px;
+    margin-top: 5vh;
+}
+
+.card .quadrado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+}
+
+.card .quadrado::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgb(255, 255, 255);
+    background: -webkit-linear-gradient(left, #b7d5e5, #ffb6c0);
+    background: -moz-linear-gradient(left, #b7d5e5, #ffb6c0);
+    background: -ms-linear-gradient(left, #b7d5e5, #ffb6c0);
+    background: -o-linear-gradient(left, #b7d5e5, #ffb6c0);
+    background: linear-gradient(to right, #b7d5e5, #ffb6c0);
+    background: grad;
+
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+
+}
+
+.card:hover .quadrado::before {
+    background: white;
+    border: 1px solid black;
+    clip-path: circle(400px at center);
+    border-radius: 20px;
+}
+
+.card img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 300px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.card:hover img {
+    left: 85%;
+    height: 400px;
+}
+
+.card .content {
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.card:hover .content {
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    margin-left: -35vh;
+}
+
+.card .content h2 {
+    color: black;
+
+    font-size: 2em;
+    line-height: 1em;
+    margin-bottom: 5px;
+    font-family: Dancing Script;
+}
+
+.card .content h3 {
+    color: black;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.card .content p {
+    color: black;
+}
+
+.card .content a {
+    position: relative;
+    color: whitesmoke;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    background: rgb(174, 134, 37);
+    background: linear-gradient(90deg, rgba(174, 134, 37, 1) 0%, rgba(247, 239, 132, 1) 32%, rgba(212, 176, 75, 1) 83%, rgba(237, 201, 103, 1) 96%);
+
+    color: white;
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.destaque-tipo {
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+.destaque-tipo h2 {
+    font-family: Dancing Script;
+    font-weight: 100;
+    font-size: 4em;
+}
+
+.card .quadrado-homem::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgb(174, 134, 37);
+    background: linear-gradient(90deg, rgba(174, 134, 37, 1) 0%, rgba(247, 239, 132, 1) 32%, rgba(212, 176, 75, 1) 83%, rgba(237, 201, 103, 1) 96%);
+
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+
+}
+
+.card:hover .quadrado-homem::before {
+    background: white;
+    border: 1px solid black;
+    clip-path: circle(400px at center);
+    border-radius: 20px;
+}
+
+/* ======================================== Footer ======================================== */
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    border-radius: 40px 40px 0px 0px;
+    margin-top: 20vh;
+    color: white;
+}
+
+footer ul {
+    display: grid;
+    justify-content: center;
+    list-style: none;
+
+}
+
+footer ul li {
+    color: rgba(0, 0, 0, 0.637);
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.637);
+    font-weight: 100;
+    font-size: 0.8em;
+}
+
+.redes-sociais {
+    display: flex;
+    list-style: none;
+}
+
+.redes-sociais li .redes-sociais-a {
+    display: flex;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 23px;
+    margin-right: 50px;
+    font-size: 60px;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.redes-sociais li .redes-sociais-a::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 2px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.redes-sociais li .redes-sociais-a:hover {
+    transform: rotate(-15deg);
+}
+
+.redes-sociais li .redes-sociais-a:hover::before {
+    transform: rotate(15deg);
+}
+
+.redes-sociais li .redes-sociais-a::before {
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #25d366;
+    right: -5px;
+    bottom: 0;
+    border-radius: 23px;
+    z-index: -1;
+    transform-origin: 100% 100%;
+    transform: rotate(10deg);
+    transition: 0.3s;
+}
+
+.redes-sociais li:nth-child(2) .redes-sociais-a::before {
+    background: #1da1f2;
+}
+
+.redes-sociais li:nth-child(3) .redes-sociais-a::before {
+    background: #dc2743;
+}
+
+.fundo {
+    display: grid;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: -5vh;
+}
+
+/* ======================================== img decorativas ======================================== */
+
