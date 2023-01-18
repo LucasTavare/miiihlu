@@ -89,8 +89,9 @@ main{
     padding: 24px;
     scroll-snap-align: start;
     border-radius: 8px;
-    background-color: blue;
+    background-image: url('/img/tenis/nike1.png');
 }
+
 
 
 /* ======================================== Footer ======================================== */

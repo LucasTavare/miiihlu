@@ -29,8 +29,9 @@
   gap: 20px;
   
   align-items: flex-start;
-  
+
  }
+ 
  .nav-bar hr{
   border-top: none;
   border-left: none;
@@ -51,7 +52,7 @@
   grid-template-rows: repeat(2,1fr);
   justify-content: flex-start;
   padding: 40px;
-  margin-top: -20vh;
+  margin-top: -10vh;
  }
 
  .fundo ul li a{

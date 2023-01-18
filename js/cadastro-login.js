@@ -15,7 +15,7 @@ const addUser = () => {
                 icon: result.retorno == 'ok' ? 'success'  : 'error'
             })
 
-            result.retorno == 'ok' ? window.location.replace("http://localhost/miihlu/index.html") : ''
+            result.retorno == 'ok' ? window.location.replace("http://localhost/miiihlu/index.html") : ''
         })
 
 }
@@ -39,7 +39,7 @@ const validaLogin = () =>{
             
         })
 
-            result.retorno == 'ok' ? window.location.replace("http://localhost/miihlu/pages/destaques.html") : ''
+            result.retorno == 'ok' ? window.location.replace("http://localhost/miiihlu/pages/destaques.html") : ''
 
         })
     
