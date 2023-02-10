@@ -9,10 +9,11 @@
 }
 
 body{
-    background-color: #f0efef;
+    background-color: wheat;
+    overflow-x: hidden;
 }
 
-.container {
+.container{
     width: 100vw;
     display: grid;
     justify-items: center;
@@ -100,6 +101,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 300px;
+    width: 100vw;
     background-color: rgb(255, 255, 255);
     align-items: center;
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
@@ -203,5 +205,94 @@ footer ul li a {
     margin-bottom: -5vh;
 }
 
+main{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    width: 100vw;
+}
 
+.card-tenis{
+    width: 55vh;
+    height: 75vh;
+    background-color: white;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+}
 
+.flip-card {
+    background-color: transparent;
+    width: 430px;
+    height: 430px;
+    perspective: 1000px;
+    z-index: 1;
+ 
+  }
+ 
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+ 
+  }
+ 
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+ 
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+  }
+ 
+  .flip-card-front img {
+    width: 430px;
+    height: 430px;
+    border-radius: 20px;
+ 
+  }
+ 
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+ 
+  .flip-card-back img {
+    width: 430px;
+    height: 430px;
+    border-radius: 20px;
+  }
+ 
+  .flip-card-back h3 {
+    margin-bottom: 0.3rem;
+    color: #0000;
+  }
+ 
+  .flip-card h1 {
+    margin: 0;
+    color: #0000;
+  }
+
+  .text-button-tenis{
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .btn-comprar{
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .btn-comprar:hover{
+    transition: 2s;
+    background-color: #1da1f2;
+  }

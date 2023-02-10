@@ -130,12 +130,12 @@
 
  }
 
- /* ==================================== flip roupas ==================================== */
+ /* ==================================== flip card tenis ==================================== */
 
  .flip-card {
    background-color: transparent;
-   width: 430px;
-   height: 430px;
+   width: 50vw;
+   height: 50vh;
    perspective: 1000px;
    z-index: 1;
 
