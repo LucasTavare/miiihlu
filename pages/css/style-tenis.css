@@ -10,9 +10,10 @@
 
 body{
     background-color: #f0efef;
+    overflow-x: hidden;
 }
 
-.container {
+.container-meu {
     width: 100vw;
     display: grid;
     justify-items: center;
@@ -73,12 +74,10 @@ h1 {
 
 
 main{
-    display: flex;
-    overflow-x: scroll;
+    
     padding: 24px;
     width: 40vw;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 24px;
+    
     border-radius: 8px;
     gap: 12px;
 }
@@ -202,6 +201,4 @@ footer ul li a {
     width: 100%;
     margin-bottom: -5vh;
 }
-
-
 
